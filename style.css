@@ -125,7 +125,7 @@ input {
 
 /* message */
 .message{
-    padding: 20px 50px;
+    padding: 20px 10px;
     display: flex;
     flex-wrap: wrap;
     width: 70%;
@@ -142,6 +142,7 @@ input {
 }
 .message h3{
     font-size: 1.2em;
+    width: 90%;
 }
 .no-tasks{
     color: red;
