@@ -1,0 +1,154 @@
+@import url("https://use.typekit.net/coa5bcp.css");
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 48
+}
+
+* {
+    font-family: poppins, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+section {
+    display: flex;
+    padding: 100px;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.task-box {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 70%;
+    box-shadow: 1px 1px 8px 1px rgba(128, 128, 128, 0.438);
+    margin: auto;
+    overflow: hidden;
+}
+
+.task-box .write-task h2 {
+    margin-bottom: 20px;
+}
+
+.task-box .write-task h6 {
+    color: gray;
+}
+
+.but-task {
+    display: block;
+    background-color: rgba(5, 102, 86, 0.815);
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 1px 1px 6px 1px rgba(5, 102, 86, 0.575);
+    cursor: pointer;
+}
+
+input {
+    border: 0.5px solid rgba(128, 128, 128, 0.438);
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-top: 2px;
+    font-size: 1.3em;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.your-tasks {
+    margin-top: 70px;
+}
+
+.tasks {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.tasks .task {
+    color: #fff;
+    background-color: rgba(5, 102, 86, 0.699);
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tasks .task button{
+    background-color: red;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.p-task-on {
+    color: #fff;
+    background-color: rgba(5, 102, 86, 0.699);
+    padding: 15px;
+    font-weight: 500;
+    font-size: 1.5em;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+@media (max-width: 710px) {
+    body {
+        font-size: 14px;
+    }
+    section {
+        padding: 0;
+    }
+    .task-box {
+        padding: 37px;
+        width: 95%;
+    }
+}
+
+
+/* message */
+.message{
+    padding: 20px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+.message p{
+    font-size: 1.3em;
+}
+.message h3{
+    font-size: 1.2em;
+}
+.no-tasks{
+    color: red;
+}
+
+@media (max-width: 710px){
+    .message{
+        width: 95%;
+    }
+}
