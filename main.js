@@ -93,35 +93,12 @@ if(window.localStorage['msg'] === 'true'){
   window.localStorage.setItem('msg',false);
 }
 
-if(window.localStorage['tasks'] === ''){
-  noTasks.style.cssText = "display:block;";
+if(window.localStorage['tasks'] !== undefined){
+  if(window.localStorage['tasks'] === ''){
+    noTasks.style.cssText = "display:block;";
+  }else{
+    noTasks.remove();
+  }
 }else{
-  noTasks.remove();
+  noTasks.style.cssText = "display:block;";
 }
-
-
-
-// if(done === true){
-//   window.onload = function(){
-//     setTimeout(()=>{
-//       let msgDiv = document.createElement("div");
-//       let msgH3 = document.createElement("h3")
-//       let msgP = document.createElement("p")
-//       let msgPSpan = document.createElement("span")
-  
-//       // Txt
-//       let msgTxt = document.createTextNode("Task Added Successfully");
-//       let spanTxt = document.createTextNode("3");
-  
-//       // appendding msg
-//       section.prepend(window.localStorage['msgDiv']);
-//       msgDiv.appendChild(msgH3);
-//       msgDiv.appendChild(msgP);
-//       msgP.appendChild(msgPSpan);
-//       msgP.appendChild(spanTxt);
-//       msgH3.appendChild(msgTxt);
-  
-//       msgDiv.className = "message";
-//     },2000);
-//   }
-// }
